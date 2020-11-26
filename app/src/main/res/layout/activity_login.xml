@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity">
+
+    <TextView
+        android:id="@+id/txtAppTitle"
+        android:text="@string/text_app_slogan"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_above="@+id/btnSignUp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtAppTitle"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/text_login_with"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:paddingHorizontal="8dp"
+            android:inputType="phone"
+            android:hint="@string/hint_your_phone_number"
+            android:textSize="14sp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/ic_phone" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:paddingHorizontal="8dp"
+            android:hint="@string/hint_password"
+            android:textSize="14sp"
+            android:drawableStart="@drawable/ic_lock"
+            android:layout_marginTop="8dp"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/ic_phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/cbRememberMe"
+                android:text="@string/text_remember_me"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtForgotPassword"
+                android:gravity="end"
+                android:text="@string/text_forgot_password"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_login"/>
+
+        <TextView
+            android:text="@string/text_or_login_with"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_fb"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="24dp"/>
+
+            <ImageView
+                android:src="@drawable/ic_google"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="24dp"/>
+
+            <ImageView
+                android:src="@drawable/ic_twitter"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="24dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_signup_here"/>
+
+</RelativeLayout>
