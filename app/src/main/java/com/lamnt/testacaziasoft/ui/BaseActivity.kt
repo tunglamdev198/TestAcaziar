@@ -1,4 +1,4 @@
-package com.lamnt.testacaziasoft
+package com.lamnt.testacaziasoft.ui
 
 import android.annotation.SuppressLint
 import android.content.DialogInterface

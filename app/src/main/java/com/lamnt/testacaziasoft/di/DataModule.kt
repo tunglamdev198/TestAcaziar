@@ -2,7 +2,7 @@ package com.lamnt.testacaziasoft.di
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.lamnt.testacaziasoft.Constant
+import com.lamnt.testacaziasoft.utils.Constant
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

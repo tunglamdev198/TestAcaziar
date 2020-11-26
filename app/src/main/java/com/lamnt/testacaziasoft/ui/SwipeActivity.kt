@@ -6,7 +6,6 @@ import android.view.animation.LinearInterpolator
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DefaultItemAnimator
-import com.lamnt.testacaziasoft.BaseActivity
 import com.lamnt.testacaziasoft.R
 import com.lamnt.testacaziasoft.models.User
 import com.lamnt.testacaziasoft.repository.PrefRepository

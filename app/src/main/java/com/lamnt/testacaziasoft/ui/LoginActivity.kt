@@ -1,7 +1,6 @@
 package com.lamnt.testacaziasoft.ui
 
 import androidx.lifecycle.ViewModelProvider
-import com.lamnt.testacaziasoft.BaseActivity
 import com.lamnt.testacaziasoft.R
 import com.lamnt.testacaziasoft.repository.PrefRepository
 import com.lamnt.testacaziasoft.viewmodel.LoginViewModel

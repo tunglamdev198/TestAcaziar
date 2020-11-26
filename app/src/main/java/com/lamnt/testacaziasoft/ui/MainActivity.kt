@@ -1,7 +1,8 @@
-package com.lamnt.testacaziasoft
+package com.lamnt.testacaziasoft.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.lamnt.testacaziasoft.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
